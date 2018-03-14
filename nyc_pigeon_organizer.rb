@@ -7,10 +7,10 @@ def nyc_pigeon_organizer(pigeon_data)
       pigeon_data[attribute].each do |key,value|
         value.each do |name|
           if pigeons.keys.include?(name)
-            pigeons[name][] 
+            pigeons[name][attribute] << key 
             binding.pry
           else 
-            
+            pigeons[name][attribute] = [key]
           end 
         end 
       end 
