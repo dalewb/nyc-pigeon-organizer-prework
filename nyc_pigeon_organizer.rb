@@ -9,7 +9,7 @@ def nyc_pigeon_organizer(pigeon_data)
           # binding.pry 
           if pigeons.keys.include?(name)
             pigeons[name][attribute] << key 
-            binding.pry
+            # binding.pry
           else 
             pigeons[name] = {} 
             pigeons[name][attribute] = [key]
