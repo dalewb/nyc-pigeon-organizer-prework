@@ -5,8 +5,14 @@ def nyc_pigeon_organizer(pigeon_data)
   pigeon_data.each do |attributes, info|
     pigeon_data.keys.each do |attribute|
       pigeon_data[attribute].each do |key,value|
-        
-        binding.pry
+        value.each do |name|
+          if pigeons.keys.include?(name)
+            pigeons[name][] 
+            binding.pry
+          else 
+            
+          end 
+        end 
       end 
     end 
   end 
