@@ -7,7 +7,7 @@ def nyc_pigeon_organizer(pigeon_data)
       pigeon_data[attribute].each do |key,value|
         value.each do |name|
           # binding.pry
-          if pigeons.keys.include?(name) && pigeons[attribute] != nil 
+          if pigeons.keys.include?(name) && pigeons[attribute] 
             pigeons[name][attribute] << key 
             binding.pry
           else 
