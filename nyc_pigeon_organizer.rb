@@ -10,7 +10,7 @@ def nyc_pigeon_organizer(pigeon_data)
           if pigeons[name] == nil 
             pigeons[name] = {}
           elsif pigeons.keys.include?(name) && pigeons[name][attribute]
-            pigeons[name][attribute] << key 
+            pigeons[name][attribute] << key unless pigeons[name][attribute].include?(key)
             # binding.pry
           else 
             # pigeons[name] = {} 
