@@ -20,3 +20,10 @@ def nyc_pigeon_organizer(data)
   binding.pry
   pigeons 
 end
+
+if pigeons.keys.include?(name)
+  binding.pry 
+  pigeons[name][label] << info 
+          else 
+            pigeons[name] = {}
+            pigeons[name][label] = [info]
